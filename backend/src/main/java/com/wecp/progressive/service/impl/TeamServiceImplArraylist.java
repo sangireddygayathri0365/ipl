@@ -9,11 +9,12 @@ import com.wecp.progressive.service.TeamService;
 
 public class TeamServiceImplArraylist implements TeamService {
 
-    private static List<Team> teamList = new ArrayList<>();
+    private List<Team> teamList = new ArrayList<>();
 
    @Override 
    public List<Team> getAllTeams() 
-   { return teamList;
+   { 
+    return teamList;
    }
     @Override
     public int addTeam(Team team) {
