@@ -4,6 +4,7 @@ import com.wecp.progressive.entity.Team;
 import com.wecp.progressive.exception.TeamAlreadyExistsException;
 import com.wecp.progressive.exception.TeamDoesNotExistException;
 import com.wecp.progressive.repository.CricketerRepository;
+import com.wecp.progressive.repository.MatchRepository;
 import com.wecp.progressive.repository.TeamRepository;
 import com.wecp.progressive.service.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,9 @@ public class TeamServiceImplJpa  implements TeamService {
 
     @Autowired
     CricketerRepository cricketerRepository;
+
+    @Autowired
+    MatchRepository matchRepository;
 
     @Autowired
     public TeamServiceImplJpa(TeamRepository teamRepository) {
@@ -56,6 +60,7 @@ public class TeamServiceImplJpa  implements TeamService {
 
     @Override
     public void deleteTeam(int teamId) throws SQLException {
+        matchRepository.deleteByTeamId(teamId);
         cricketerRepository.deleteByTeamId(teamId);
         teamRepository.deleteById(teamId);
     }
