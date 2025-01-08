@@ -11,4 +11,8 @@ public interface TeamDAO {
     void updateTeam(Team team) throws SQLException;
     void deleteTeam(int teamId) throws SQLException;
     List<Team> getAllTeams() throws SQLException;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6d9f8fb4927edf91f75ad2579f6b8862474886c6

@@ -26,8 +26,16 @@ public interface CricketerService {
     }
 
     //Do not implement these methods in CricketerServiceImplArraylist.java and CricketerServiceImplJdbc.java class
+<<<<<<< HEAD
     default List<Cricketer> getCricketersByTeam(int teamId) throws SQLException {
         return null;
     }
 
 }
+=======
+    default List<Cricketer> getCricketersByTeam(int teamId) {
+        return null;
+    }
+
+}
+>>>>>>> 6d9f8fb4927edf91f75ad2579f6b8862474886c6

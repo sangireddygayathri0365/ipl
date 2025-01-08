@@ -1,5 +1,6 @@
 package com.wecp.progressive.entity;
 
+<<<<<<< HEAD
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -77,4 +78,8 @@ this.email = email;
     public void setTeam(Team team) {
 this.team = team;
     }
+=======
+public class Vote {
+
+>>>>>>> 6d9f8fb4927edf91f75ad2579f6b8862474886c6
 }

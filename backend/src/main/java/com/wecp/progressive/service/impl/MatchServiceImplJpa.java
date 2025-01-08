@@ -1,4 +1,5 @@
 package com.wecp.progressive.service.impl;
+<<<<<<< HEAD
  
 import com.wecp.progressive.entity.Match;
 import com.wecp.progressive.exception.NoMatchesFoundException;
@@ -55,4 +56,9 @@ public class MatchServiceImplJpa implements MatchService {
       }
         return matchList;
     }
+=======
+
+public class MatchServiceImplJpa  {
+
+>>>>>>> 6d9f8fb4927edf91f75ad2579f6b8862474886c6
 }

@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
  
+<<<<<<< HEAD
 import com.wecp.progressive.entity.Team;
 import com.wecp.progressive.exception.TeamAlreadyExistsException;
 import com.wecp.progressive.exception.TeamDoesNotExistException;
@@ -72,4 +73,37 @@ public class TeamServiceImplJpa  implements TeamService {
         cricketerRepository.deleteByTeamId(teamId);
         teamRepository.deleteById(teamId);
     }
+=======
+import java.util.List;
+ 
+import com.wecp.progressive.dao.TeamDAO;
+import com.wecp.progressive.entity.Team;
+import com.wecp.progressive.service.TeamService;
+ 
+public class TeamServiceImplJpa implements TeamService  {
+    private TeamDAO teamDAO;
+   
+ 
+    public TeamServiceImplJpa(TeamDAO teamDAO) {
+        this.teamDAO = teamDAO;
+    }
+ 
+    @Override
+    public List<Team> getAllTeams() {
+        return null;
+       
+    }
+ 
+    @Override
+    public int addTeam(Team team) {
+        return -1;
+    }
+ 
+    @Override
+    public List<Team> getAllTeamsSortedByName() {
+        return List.of();
+    }
+   
+ 
+>>>>>>> 6d9f8fb4927edf91f75ad2579f6b8862474886c6
 }

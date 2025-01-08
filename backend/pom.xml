@@ -53,6 +53,7 @@
       <version>0.11.2</version>
       <scope>runtime</scope>
     </dependency>
+<<<<<<< HEAD
 <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 <dependency>
     <groupId>org.projectlombok</groupId>
@@ -62,6 +63,8 @@
 </dependency>
 
 
+=======
+>>>>>>> 6d9f8fb4927edf91f75ad2579f6b8862474886c6
 
 
     <!-- MySQL JDBC Driver -->
