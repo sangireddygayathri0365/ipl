@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
  
 @Service
-public class VoteServiceImpl{
+public class VoteServiceImpl implements VoteService{
  
     @Autowired
     private VoteRepository voteRepository;

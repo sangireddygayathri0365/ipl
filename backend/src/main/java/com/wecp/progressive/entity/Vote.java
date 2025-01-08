@@ -19,12 +19,12 @@ public class Vote {
  
     private String category;
  
-    // @ManyToOne
-    // @JoinColumn(name = "cricketer_id")
+    @ManyToOne
+    @JoinColumn(name = "cricketer_id")
     private Cricketer cricketer;
  
-    // @ManyToOne
-    // @JoinColumn(name = "team_id")
+    @ManyToOne
+    @JoinColumn(name = "team_id")
     private Team team;
  
     public Vote() {}
